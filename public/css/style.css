@@ -1,0 +1,41 @@
+/* 
+#8FBDD3 blue
+#E4D1B9 beige
+#BE8C63 light-brown
+#A97155 brown
+*/
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.pad-x{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.text-blue{
+    color: #8FBDD3;
+}
+
+.bg-beige{
+    background-color: #E4D1B9;
+}
+
+#header{
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+#header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#about{
+    background: url("public/images/waves1.svg");
+}
