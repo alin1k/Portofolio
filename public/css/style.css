@@ -11,6 +11,41 @@
     box-sizing: border-box;
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 1.5% 4% !important;
+    position: fixed;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+nav li{
+    list-style: none;
+    margin-left: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color:grey;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: #8FBDD3;
+}
 
 
 .pad-x{
@@ -22,9 +57,18 @@
     color: #8FBDD3;
 }
 
-.bg-beige{
-    background-color: #E4D1B9;
+.text-brown{
+    color: #BE8C63;
 }
+
+.bg-blob{
+    background: url("../images/blob.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 
 #header{
     padding-top: 15%;
@@ -32,7 +76,7 @@
 }
 
 #header h1{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* 400 700 */
     font-weight: 700;
 }
 
