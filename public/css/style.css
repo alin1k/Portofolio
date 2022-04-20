@@ -48,6 +48,8 @@ nav a:hover{
 }
 
 
+
+
 .pad-x{
     padding-left: 15%;
     padding-right: 15%;
@@ -64,7 +66,7 @@ nav a:hover{
 .bg-blob{
     background: url("../images/blob.svg");
     background-size: cover;
-    background-position: center;
+    background-position:center;
 }
 
 
@@ -81,5 +83,28 @@ nav a:hover{
 }
 
 #about{
-    background: url("public/images/waves1.svg");
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+#about .col-6:nth-child(1){
+    background: url("../images/blob2.svg");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .col-6:nth-child(1) h1{
+    font-family: 'Montserrat', sans-serif; /* 400 700 */
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+#about p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
 }
