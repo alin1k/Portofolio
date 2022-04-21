@@ -25,13 +25,13 @@
 <body>
 
     <nav class="container-fluid">
-        <h1 class="logo">Logo.</h1>
+        <i class="fa-2x fa-solid fa-code"></i>
 
         <div>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -40,18 +40,50 @@
         <h1 style="font-size: 4rem;">Hello, I'm</h1>
         <h1 style="font-size: 6rem">Alin Olteanu</h1>
         <p class="lead" style="font-size: 1.5rem;">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-        <button class="btn btn-dark" style="margin-top: 3rem;">Find out more</button>
     </div>
 
     <div id="about" class="row container-fluid pad-x">
         <div class="col-6">
-            <h1>ABOUT ME</h1>
+            <h1 style="text-align: center;">ABOUT ME</h1>
         </div>
-        <div class="col-6">
+        <div class="col-6 pad-x">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dolore soluta mollitia error, dicta libero, iusto culpa omnis architecto fugit, itaque magnam voluptates sunt! Quos ad delectus quod error cum.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laudantium, minus blanditiis maxime sint repellat omnis quae, totam eum impedit voluptatum optio, aliquam eaque. Et voluptatibus sunt labore explicabo architecto adipisci blanditiis, necessitatibus aliquam? Obcaecati perferendis quas tempore rerum minima.</p>
         </div>
-    
+    </div>
+
+    <div class="container-fluid" id="projects">
+        <h1>MY PROJECTS</h1>
+
+        <div class="container-fluid">
+            <div class="container-fluid row">
+                <div class="col-6">
+                    <div class="card">
+                        <img src="public/images/projects/project1.png" alt="project photo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather App</h5>
+                            <h6 class="card-subtitle text-muted my-2"><strong style="font-size: 1.5rem;">EJS</strong>  <i class="fa-2x fa-brands fa-js-square"></i>  <i class="fa-2x fa-brands fa-css3-alt"></i></h6>
+
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, at sunt? Consequuntur enim delectus optio!</p>
+                            <a href="https://github.com/alin1k/Weather-App" class="btn btn-dark">Visit GitHub repo <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <img src="public/images/projects/project2.png" alt="project photo" class="card-img-top">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Landing page</h5>
+                            <h6 class="card-subtitle text-muted my-2"><i class="fa-2x fa-brands fa-html5"></i>  <i class="fa-2x fa-brands fa-css3-alt"></i>  <i class="fa-2x fa-brands fa-js-square"></i></h6>
+                        
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, at sunt? Consequuntur enim delectus optio!</p>
+                            <a href="https://github.com/alin1k/site-masaj-terapeutic" class="btn btn-dark">Visit GitHub repo <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
