@@ -20,6 +20,7 @@ nav{
 
     font-family: 'Nunito Sans', sans-serif;
     padding: 1.5% 4% !important;
+    z-index: 1000;
 }
 
 nav ul{
@@ -48,6 +49,13 @@ nav a:hover{
     color: #8FBDD3;
 }
 
+label{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
 
 
 
@@ -71,8 +79,23 @@ nav a:hover{
 }
 
 .card{
-    border: solid 0.2px;
+    border: none;
+    border-radius: 2rem;
+    text-align: center;
 }
+.card-img-top{
+    border-radius: 2rem 2rem 0 0 ;
+}
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.card-text{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
 
 
 
@@ -139,4 +162,49 @@ nav a:hover{
 
 #projects .row .col-6{
     padding: 5% 10%;
+}
+
+#contact{
+    margin-top: -2px;
+    background-color: #8FBDD3;
+
+    padding-bottom: 7%;
+}
+
+#contact h1:nth-child(1){
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+
+    margin-bottom: 4rem;
+}
+
+#contact p{
+    display: inline;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0 0 0 3rem;
+}
+
+#contact a{
+    display: inline;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0 0 0 1rem;
+    color: #212529;
+}
+
+#contact .row .col-6:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#contact .row .col-6:nth-child(1) div{
+    display: flex;
+    align-items: center;
 }

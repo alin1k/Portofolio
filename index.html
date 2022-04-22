@@ -42,7 +42,7 @@
         <p class="lead" style="font-size: 1.5rem;">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
     </div>
 
-    <div id="about" class="row container-fluid pad-x">
+    <div id="about" class="row container-fluid">
         <div class="col-6">
             <h1 style="text-align: center;">ABOUT ME</h1>
         </div>
@@ -65,7 +65,7 @@
                             <h6 class="card-subtitle text-muted my-2"><strong style="font-size: 1.5rem;">EJS</strong>  <i class="fa-2x fa-brands fa-js-square"></i>  <i class="fa-2x fa-brands fa-css3-alt"></i></h6>
 
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, at sunt? Consequuntur enim delectus optio!</p>
-                            <a href="https://github.com/alin1k/Weather-App" class="btn btn-dark">Visit GitHub repo <i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/alin1k/Weather-App" target="_blank" class="btn btn-dark mt-3">Visit GitHub repo <i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -78,12 +78,46 @@
                             <h6 class="card-subtitle text-muted my-2"><i class="fa-2x fa-brands fa-html5"></i>  <i class="fa-2x fa-brands fa-css3-alt"></i>  <i class="fa-2x fa-brands fa-js-square"></i></h6>
                         
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, at sunt? Consequuntur enim delectus optio!</p>
-                            <a href="https://github.com/alin1k/site-masaj-terapeutic" class="btn btn-dark">Visit GitHub repo <i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/alin1k/site-masaj-terapeutic" target="_blank" class="btn btn-dark">Visit GitHub repo <i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="contact" class="container-fluid pad-x">
+        <h1>CONTACT ME</h1>
+
+        <form class="container-fluid" method="post" action="">
+            <div class="row container-fluid">
+                <div class="col-6">
+                    <div>
+                        <i class="fa-2x fa-solid fa-envelope"></i>
+                        <p>olteanualin1509@gmail.com</p>
+                    </div>
+                    <div>
+                        <i class="fa-2x fa-solid fa-phone"></i>
+                        <p>0787 827 007</p>
+                    </div>
+                    <div>
+                        <i class="fa-2x fa-brands fa-github"></i>
+                        <p>GitHub profile: </p> <a href="https://github.com/alin1k" target="_blank">alin1k</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-5">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" rows="3" style="resize: none;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Send message</button>
+                </div>
+            </div>
+        </form>
     </div>
 
 </body>
