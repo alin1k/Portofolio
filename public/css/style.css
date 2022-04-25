@@ -15,8 +15,6 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* position: fixed;
-    top: 0; */
 
     font-family: 'Nunito Sans', sans-serif;
     padding: 1.5% 4% !important;
@@ -67,27 +65,23 @@ h5 a{
     color: #212529;
 }
 
-
-
-
-
-
-.scrolled{
-    background-color: #212529;
-    color: #fff;
+input{
+    margin-bottom: 2rem;
 }
+
+textarea{
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
 
 .pad-x{
     padding-left: 10%;
     padding-right: 10%;
-}
-
-.text-blue{
-    color: #8FBDD3;
-}
-
-.text-brown{
-    color: #BE8C63;
 }
 
 .bg-blob{
@@ -114,6 +108,11 @@ h5 a{
     font-weight: 600;
 }
 
+.row{
+    margin: 0;
+}
+
+
 
 
 
@@ -123,18 +122,25 @@ h5 a{
     padding-bottom: 15%;
     margin-top: -3rem;
 }
-
 #header h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+}
+#header h1:nth-child(1){
+    font-size: 4rem;
+}
+#header h1:nth-child(2){
+    font-size: 6rem;
+}
+#header p{
+    font-size: 1.5rem;
 }
 
 #about{
     padding-top: 3%;
     padding-bottom: 3%;
 }
-
-#about .col-6:nth-child(1){
+#about .col-lg-6:nth-child(1){
     background: url("../images/blob2.svg");
     background-size: contain;
     background-repeat:no-repeat;
@@ -144,13 +150,17 @@ h5 a{
     align-items: center;
     justify-content: center;
 }
-
-#about .col-6:nth-child(1) h1{
+#about .col-lg-6:nth-child(1) h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 4rem;
 }
-
+#about .col-lg-6:nth-child(2) h1{
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
 #about p{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
@@ -169,7 +179,6 @@ h5 a{
     justify-content: space-between;
 
 }
-
 #projects h1:nth-child(1){
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -178,8 +187,7 @@ h5 a{
 
     margin-bottom: 2rem;
 }
-
-#projects .row .col-6{
+#projects .row .col-lg-6{
     padding: 5% 10%;
 }
 
@@ -189,7 +197,6 @@ h5 a{
 
     padding-bottom: 7%;
 }
-
 #contact h1:nth-child(1){
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -198,7 +205,6 @@ h5 a{
 
     margin-bottom: 4rem;
 }
-
 #contact p{
     display: inline;
     font-family: 'Nunito Sans', sans-serif;
@@ -206,7 +212,6 @@ h5 a{
     font-size: 1.2rem;
     margin: 0 0 0 3rem;
 }
-
 #contact a{
     display: inline;
     font-family: 'Nunito Sans', sans-serif;
@@ -215,15 +220,120 @@ h5 a{
     margin: 0 0 0 1rem;
     color: #212529;
 }
-
-#contact .row .col-6:nth-child(1){
+#contact .row .col-lg-6:nth-child(1){
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
 }
-
-#contact .row .col-6:nth-child(1) div{
+#contact .row .col-lg-6:nth-child(1) div{
     display: flex;
     align-items: center;
+}
+#contact .row .row .col-sm-6{
+    padding: 0;
+}
+#contact .row .row .col-sm-6:nth-child(1){
+    padding-right: 1rem;
+}
+#contact .row .row .col-sm-6:nth-child(2){
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+@media (max-width: 992px){
+    #header{
+        text-align: center;
+    }
+
+    #about{
+        text-align: center;
+    }
+    #about .col-lg-6:nth-child(1){
+        display: none;
+    }
+    #about .col-lg-6:nth-child(2) h1{
+        display: block;
+    }
+
+    #projects .row .col-lg-6{
+        padding: 5% 20%;
+    }
+
+    #contact .col-lg-6:nth-child(1) div{
+        margin-bottom: 1.5rem;
+    }
+    #contact .col-lg-6:nth-child(2){
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px){
+    #projects .row .col-lg-6{
+        padding: 5% 10%;
+    }
+}
+
+@media (max-width: 576px){
+    nav{
+        display: none;
+    }
+    input{
+        margin-bottom: 1rem;
+    }
+
+    .pad-x{
+        padding: 0;
+    }
+
+    #header{
+        margin-top: 0;
+    }
+    #header h1:nth-child(1){
+        font-size: 3rem;
+    }
+    #header h1:nth-child(2){
+        font-size: 4rem;
+    }
+    #header p{
+        font-size: 1rem;
+    }
+
+    #about .col-lg-6:nth-child(2) h1{
+        font-size: 3rem;
+    }
+
+    #projects h1:nth-child(1){
+        font-size: 3rem;
+    }
+
+    #contact{
+        text-align: center;
+    }
+    #contact h1:nth-child(1){
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    #contact .row .row .col-sm-6:nth-child(1){
+        padding-right: 0;
+    }
+    #contact .row .row .col-sm-6:nth-child(2){
+        padding-left: 0;
+    }
+    #contact .row .col-lg-6:nth-child(1){
+        align-items: center;
+    }
+    #contact .row .col-lg-6:nth-child(1) div{
+        flex-direction: column;
+    }
+    #contact .row .col-lg-6:nth-child(1) div p{
+        margin: 0;
+    }
+    #contact .col-lg-6:nth-child(2) {
+        margin-top: 2rem;
+    }
 }
