@@ -15,8 +15,8 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
+    /* position: fixed;
+    top: 0; */
 
     font-family: 'Nunito Sans', sans-serif;
     padding: 1.5% 4% !important;
@@ -26,6 +26,7 @@ nav{
 nav ul{
     display: flex;
     flex-direction: row;
+    margin: 0;
 }
 
 nav h1{
@@ -35,7 +36,7 @@ nav h1{
 
 nav li{
     list-style: none;
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 nav a{
@@ -43,6 +44,8 @@ nav a{
     color:grey;
     font-size: 1rem;
     font-weight: 600;
+
+    transition: 0.7s;
 }
 
 nav a:hover{
@@ -55,9 +58,24 @@ label{
     font-size: 1.2rem;
 }
 
+footer{
+    background-color: #8FBDD3;
+    text-align: center;
+}
+
+h5 a{
+    color: #212529;
+}
 
 
 
+
+
+
+.scrolled{
+    background-color: #212529;
+    color: #fff;
+}
 
 .pad-x{
     padding-left: 10%;
@@ -103,6 +121,7 @@ label{
 #header{
     padding-top: 15%;
     padding-bottom: 15%;
+    margin-top: -3rem;
 }
 
 #header h1{
