@@ -165,6 +165,10 @@ textarea{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
 }
+#about p a{
+    color: #8FBDD3;
+    text-decoration: none;
+}
 
 #projects{
     padding-top: 7%;
