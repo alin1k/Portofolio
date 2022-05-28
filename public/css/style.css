@@ -108,6 +108,11 @@ textarea{
     font-weight: 600;
 }
 
+.card-text a{
+    color: #8FBDD3;
+    text-decoration: none;
+}
+
 .row{
     margin: 0;
 }
