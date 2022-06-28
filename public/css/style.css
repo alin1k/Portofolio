@@ -13,18 +13,24 @@
 
 nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-
     font-family: 'Nunito Sans', sans-serif;
-    padding: 1.5% 4% !important;
     z-index: 1000;
+    height: 100%;    
+    width: 100%;
 }
 
 nav ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
     margin: 0;
+    /* margin-top: 10rem; */
+    padding: 0;
 }
 
 nav h1{
@@ -34,12 +40,11 @@ nav h1{
 
 nav li{
     list-style: none;
-    margin-left: 4rem;
 }
 
 nav a{
     text-decoration: none;
-    color:grey;
+    color: #fff;
     font-size: 1rem;
     font-weight: 600;
 
@@ -47,7 +52,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #8FBDD3;
+    color: #212529;
 }
 
 label{
@@ -57,7 +62,8 @@ label{
 }
 
 footer{
-    background-color: #8FBDD3;
+    /* border-top: #212529 solid 0.5px; */
+    background: #8FBDD3;
     text-align: center;
 }
 
@@ -105,7 +111,7 @@ textarea{
 }
 .card-text{
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .card-text a{
@@ -115,17 +121,33 @@ textarea{
 
 .row{
     margin: 0;
+} 
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-dark);
+  }
+
+
+
+
+#sidebar{
+    height: 100vh;
+    width: 6rem;
+    background-color: #8FBDD3;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding: 4rem 0;
 }
 
-
-
-
-
+#content{
+    margin-left: 6rem;
+}
 
 #header{
     padding-top: 15%;
     padding-bottom: 15%;
-    margin-top: -3rem;
+    /* margin-top: -3rem; */
 }
 #header h1{
     font-family: 'Montserrat', sans-serif;
@@ -141,10 +163,6 @@ textarea{
     font-size: 1.5rem;
 }
 
-#about{
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
 #about .col-lg-6:nth-child(1){
     background: url("../images/blob2.svg");
     background-size: contain;
@@ -176,10 +194,9 @@ textarea{
 }
 
 #projects{
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 3rem;
 
-    background: url("../images/waves.svg");
+    background: url("../images/wave.svg");
     background-size: cover;
 
     display: flex;
@@ -194,7 +211,7 @@ textarea{
     font-size: 4rem;
     text-align: center;
 
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
 }
 #projects .row .col-lg-6{
     padding: 5% 10%;
@@ -202,9 +219,11 @@ textarea{
 
 #contact{
     margin-top: -2px;
-    background-color: #8FBDD3;
-
+    padding-top: 3rem;
     padding-bottom: 7%;
+    background: url("../images/waves.svg");
+    background-size: cover;
+    background-position: bottom;
 }
 #contact h1:nth-child(1){
     font-family: 'Montserrat', sans-serif;
@@ -212,7 +231,7 @@ textarea{
     font-size: 4rem;
     text-align: center;
 
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 #contact p{
     display: inline;
@@ -249,7 +268,22 @@ textarea{
     padding-left: 1rem;
 }
 
+::-webkit-scrollbar{
+    width: 0.5em;
+}
 
+::-webkit-scrollbar-track{
+    background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #8FBDD3;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #84acbf;
+}
 
 
 
@@ -299,6 +333,13 @@ textarea{
         padding: 0;
     }
 
+
+    #sidebar{
+        display: none;
+    }    
+    #content{
+        margin:0;
+    }
     #header{
         margin-top: 0;
     }
